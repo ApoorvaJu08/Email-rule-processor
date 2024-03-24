@@ -7,15 +7,13 @@
 
 - Clone the repository to your local machine:
 
-- git clone https://github.com/your_username/gmail-rule-based-email-processor.git
+- git clone https://github.com/ApoorvaJu08/Email-rule-processor.git
 
 - Navigate to the project directory:
 
-    - cd email_rules
-
     - create the virtual environment: python -m venv venv
 
-    - activate the virtual env: . venv/bin/activate
+    - activate the virtual environment by: source venv/bin/activate
 
     - Install the required Python packages:
 
@@ -49,6 +47,10 @@ Define the rules for processing emails in the email_rules.json file. Each rule s
 4. Customize Actions
 
 Customize the actions performed on emails based on rule conditions in the script's perform_actions() function.
+
+5. Apply the rules
+
+    - python process_emails.py
 
 
 ## Database Schema
