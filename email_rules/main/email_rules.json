@@ -1,0 +1,71 @@
+{
+  "rules": [
+    {
+      "predicate": "All",
+      "conditions": [
+        {
+          "field": "received_date",
+          "predicate": "Less than",
+          "value": "1D"
+        },
+        {
+          "field": "subject",
+          "predicate": "Contains",
+          "value": "work"
+        }
+      ],
+      "actions": [
+        "Mark as read"
+      ]
+    },
+    {
+      "predicate": "Any",
+      "conditions": [
+        {
+          "field": "subject",
+          "predicate": "Contains",
+          "value": "Flat 20% off"
+        }
+      ],
+      "actions": [
+        "Move Message to Promotions"
+      ]
+    },
+    {
+      "predicate": "All",
+      "conditions": [
+        {
+          "field": "sender",
+          "predicate": "Contains",
+          "value": "important@example.com"
+        },
+        {
+          "field": "subject",
+          "predicate": "Contains",
+          "value": "urgent"
+        }
+      ],
+      "actions": [
+        "Mark as read"
+      ]
+    },
+    {
+      "predicate": "Any",
+      "conditions": [
+        {
+          "field": "subject",
+          "predicate": "Contains",
+          "value": "promotion"
+        },
+        {
+          "field": "message_body",
+          "predicate": "Does not contain",
+          "value": "unsubscribe"
+        }
+      ],
+      "actions": [
+        "Move message to Promotions folder"
+      ]
+    }
+  ]
+}
