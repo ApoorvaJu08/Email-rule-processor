@@ -71,7 +71,7 @@ def extract_message_body(msg):
 def fetch_emails():
     creds = authenticate()
     service = build('gmail', 'v1', credentials=creds)
-    results = service.users().messages().list(userId='me', labelIds=['INBOX'], maxResults=5).execute()
+    results = service.users().messages().list(userId='me', labelIds=['INBOX'], maxResults=2).execute()
     messages = results.get('messages', [])
     emails = []
     if messages:

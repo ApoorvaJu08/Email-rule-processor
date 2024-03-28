@@ -11,7 +11,7 @@
         {
           "field": "subject",
           "predicate": "Contains",
-          "value": "work"
+          "value": "[Saroj Dynasty] Painting charges"
         }
       ],
       "actions": [
@@ -24,11 +24,11 @@
         {
           "field": "subject",
           "predicate": "Contains",
-          "value": "Make a statement"
+          "value": "Painting charges"
         }
       ],
       "actions": [
-        "Move Message to Promotions"
+        "Mark as read"
       ]
     },
     {
